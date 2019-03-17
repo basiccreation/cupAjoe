@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 import BackgroundSection from "../components/BackgroundSection"
+import Info from "../components/Info"
+
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -13,6 +15,7 @@ const IndexPage = ({ data }) => (
       title="cup-a-joe"
       styleClass="default-background"
     />
+    <Info />
   </Layout>
 )
 
