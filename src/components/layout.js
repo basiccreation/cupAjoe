@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 import "./layout.css"
-import Navbar from "./Globals/Navbar"
+import Navbar from "./globals/Navbar"
+
 const Layout = ({ children }) => (
   <>
     <Navbar />
