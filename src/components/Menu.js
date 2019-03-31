@@ -18,9 +18,32 @@ export default class Menu extends Component {
           <div className="container">
             <Title title="best of our menu" />
             <div className="row">
-              <div className="col">
-                <h1>these are our items</h1>
-              </div>
+              {this.state.coffeeItems.map(({ node }) => {
+                return (
+                  <div
+                    key={node.id}
+                    className="col-11 col-md-6 my-3 d-flex mx-auto"
+                  >
+                    <div>
+                      <Img fixed={node.image.fixed} />
+                    </div>
+                    {/*item text*/}
+                    <div className="flex-grow-1 px-3">
+                      <div className="d-flex justify-content-between">
+                        <h6 className="mb-0">
+                          <small>{node.title}</small>
+                        </h6>
+                        <h6 className="mb-0 textyellow">
+                          <small>${node.price}</small>
+                        </h6>
+                      </div>
+                      <p className="text-muted">
+                        <small>{node.descripton.descripton}</small>
+                      </p>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </section>
