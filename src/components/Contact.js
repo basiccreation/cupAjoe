@@ -16,7 +16,7 @@ export default function Contact() {
               className="form-control"
               name="name"
               id="name"
-              placeholder="jo smith"
+              placeholder="Peter Parker"
             />
             {/*email*/}
             <label htmlFor="email">Email</label>
@@ -25,7 +25,7 @@ export default function Contact() {
               className="form-control"
               name="email"
               id="email"
-              placeholder="jsmith@example.com"
+              placeholder="pparker@thedailybugle.com"
             />
             {/*description*/}
             <label htmlFor="description">Description</label>
@@ -34,7 +34,7 @@ export default function Contact() {
               id="description"
               className="form-control"
               rows="5"
-              placeholder="your text goes here"
+              placeholder="Peter Parker picked a pack of prickly photos."
             />
             <button
               type="submit"
